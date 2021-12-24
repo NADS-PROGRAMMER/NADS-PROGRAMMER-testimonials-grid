@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  background: #ecf2f8;
+  padding: 1rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-shadow: 0px 0px 10px #ecf2f8;
+          box-shadow: 0px 0px 10px #ecf2f8;
+  position: relative;
+  border-radius: 10px;
+  padding: 3rem 3rem;
+  max-width: 349px;
+  gap: 1.5rem;
+}
+
+.container * {
+  position: relative;
+  z-index: 1;
+}
+
+.container .quote-icon {
+  position: absolute;
+  right: 7%;
+  top: 0;
+  max-width: 10rem;
+  width: 32%;
+  z-index: 0;
+}
+
+.container .div--profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.1rem;
+}
+
+.container .div--profile-info .profile-info--photo {
+  display: block;
+  border-radius: 50%;
+  width: 2.7rem;
+}
+
+.container .div--profile-info .profile-info--data h1 {
+  font-size: 1.13rem;
+}
+
+.container .div--profile-info .profile-info--data p {
+  font-size: 0.997rem;
+}
+
+.container .profile-description {
+  font-size: 1.8rem;
+}
+
+.container .profile-message {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.div--first {
+  background: #7541c8;
+}
+
+.div--first .div--profile-info .profile-info--photo {
+  border: 2px solid #ae90df;
+}
+
+.div--first .div--profile-info .profile-info--data h1 {
+  color: #cfcfcf;
+}
+
+.div--first .div--profile-info .profile-info--data p {
+  color: #cfcfcf;
+  opacity: 0.5;
+}
+
+.div--first .profile-description {
+  color: white;
+}
+
+.div--first .profile-message {
+  color: #cfcfcf;
+  opacity: 0.7;
+}
+
+.div--second {
+  background: #48556a;
+}
+
+.div--second .div--profile-info .profile-info--data h1 {
+  color: white;
+}
+
+.div--second .div--profile-info .profile-info--data p {
+  color: white;
+  opacity: 0.5;
+}
+
+.div--second .profile-description {
+  color: white;
+}
+
+.div--second .profile-message {
+  color: white;
+  opacity: 0.5;
+}
+
+.div--third {
+  background: white;
+}
+
+.div--third .div--profile-info .profile-info--data h1 {
+  color: #48556a;
+}
+
+.div--third .div--profile-info .profile-info--data p {
+  color: #48556a;
+  opacity: 0.5;
+}
+
+.div--third .profile-description {
+  color: #48556a;
+}
+
+.div--third .profile-message {
+  color: #48556a;
+  opacity: 0.5;
+}
+
+.div--fourth {
+  background: #19212e;
+}
+
+.div--fourth .div--profile-info .profile-info--photo {
+  border: 2px solid #ae90df;
+}
+
+.div--fourth .div--profile-info .profile-info--data h1 {
+  color: white;
+}
+
+.div--fourth .div--profile-info .profile-info--data p {
+  color: white;
+  opacity: 0.5;
+}
+
+.div--fourth .profile-description {
+  color: white;
+}
+
+.div--fourth .profile-message {
+  color: white;
+  opacity: 0.5;
+}
+
+.div--fifth {
+  background: white;
+}
+
+.div--fifth .div--profile-info .profile-info--data h1 {
+  color: #48556a;
+}
+
+.div--fifth .div--profile-info .profile-info--data p {
+  color: #48556a;
+  opacity: 0.5;
+}
+
+.div--fifth .profile-description {
+  color: #48556a;
+}
+
+.div--fifth .profile-message {
+  color: #48556a;
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 90em) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    min-height: 100vh;
+    padding: 0 5rem;
+    overflow: hidden;
+  }
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    max-width: 1290px !important;
+    min-width: 1024px !important;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 1290px;
+    padding: 0;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+    max-width: 100%;
+    height: 100%;
+    padding: 3rem;
+  }
+  .container .quote-icon {
+    right: 18.5%;
+    top: 2%;
+  }
+  .div--first {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .div--fourth {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  .div--fifth {
+    grid-column: 4 / -1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+}
