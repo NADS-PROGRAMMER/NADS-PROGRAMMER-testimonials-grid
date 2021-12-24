@@ -1,9 +1,10 @@
-@import "../SCSS/general";
+@import "../SCSS/general"; // add all the general styles.
 
 body {
   background: $lightGrayishBlue;
   padding: 1rem;
 }
+
 main {
   @include displayFlex(column, none, center);
   min-height: 100vh;
@@ -11,6 +12,9 @@ main {
   padding: 2rem 0;
 }
 
+/** 
+  THIS IS THE GENERAL STYLE FOR ALL THE
+  TESTIMONIALS COMPONENT */
 .container {
   @include displayFlex(column, none, none);
   box-shadow: 0px 0px 10px $lightGrayishBlue;
@@ -25,16 +29,16 @@ main {
     z-index: 1;
   }
 
-  // for first div only
+  /* A  quote icon for the first testimonial. */
   .quote-icon {
     position: absolute;
+    max-width: 10rem;
+    width: 32%;
     right: 7%;
     top: 0;
-    max-width: 10rem;
-    // max-width: 30rem;
-    width: 32%;
     z-index: 0;
   }
+
   .div--profile-info {
     @include displayFlex(row, none, center);
     gap: 1.1rem;
@@ -66,6 +70,9 @@ main {
   }
 }
 
+/** Container for 
+  'Daniel Clifford'
+  I received a job offer mid-course...*/
 .div--first {
   background: $moderateViolet;
 
@@ -96,16 +103,19 @@ main {
 }
 // END OF FIRST
 
+/** Container for 
+  'Jonathan Walters'
+  The team was very supportive... */
 .div--second {
   background: $veryDarkGrayishBlue;
 
   .div--profile-info {
     .profile-info--data {
       h1 {
-        color: $white;
+        color: $lightGray;
       }
       p {
-        color: $white;
+        color: $lightGray;
         opacity: 0.5;
       }
     }
@@ -116,13 +126,16 @@ main {
   }
 
   .profile-message {
-    color: $white;
-    opacity: 0.5;
+    color: $lightGray;
+    opacity: 0.7;
   }
 }
 
 // END OF SECOND
 
+/** Container for 
+  'Jeanette Harmon'
+  An overall wonderful and rewarding... */
 .div--third {
   background: $white;
 
@@ -139,16 +152,20 @@ main {
   }
 
   .profile-description {
+    font-weight: 600;
     color: $veryDarkGrayishBlue;
   }
 
   .profile-message {
     color: $veryDarkGrayishBlue;
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 // END OF THIRD
 
+/** Container for
+  'Patrick Abrams'
+  Awesome teaching support... */
 .div--fourth {
   background: $veryDarkBlackishBlue;
 
@@ -158,10 +175,11 @@ main {
     }
     .profile-info--data {
       h1 {
-        color: $white;
+        font-weight: 600;
+        color: $lightGray;
       }
       p {
-        color: $white;
+        color: $lightGray;
         opacity: 0.5;
       }
     }
@@ -172,12 +190,15 @@ main {
   }
 
   .profile-message {
-    color: $white;
-    opacity: 0.5;
+    color: $lightGray;
+    opacity: 0.7;
   }
 }
 // END OF FOURTH
 
+/** Container for 
+  'Kira Whittle' 
+  Such a life-chaning experience... */
 .div--fifth {
   background: $white;
 
@@ -194,12 +215,13 @@ main {
   }
 
   .profile-description {
+    font-weight: 600;
     color: $veryDarkGrayishBlue;
   }
 
   .profile-message {
     color: $veryDarkGrayishBlue;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 
@@ -207,7 +229,8 @@ main {
   body {
     @include displayFlex(row, center, stretch);
     min-height: 100vh;
-    padding: 0 5rem;
+    width: 100vw;
+    padding: 0;
     overflow: hidden;
   }
   main {
@@ -221,27 +244,35 @@ main {
     height: max-content;
     width: 1290px;
     padding: 0;
+    column-gap: 3rem !important;
+    row-gap: 2.2rem !important;
   }
 
   .container {
     @include displayFlex(column, center, none);
     max-width: 100%;
     height: 100%;
-    padding: 3rem;
+    padding: 2rem 2.5rem;
 
     .quote-icon {
-      right: 18.5%;
-      top: 2%;
+      right: 13.5%;
+      top: 1%;
     }
   }
+
   .div--first {
     grid-column: 1/3;
   }
 
-  .div--fourth {
-    grid-column: 2/4;
-    // grid-row: 2/3;
+  .div--third {
+    padding-left: 3rem;
   }
+
+  .div--fourth {
+    padding: 2.75rem !important;
+    grid-column: 2/4;
+  }
+
   .div--fifth {
     grid-column: 4 / -1;
     grid-row: 1 / 3;
